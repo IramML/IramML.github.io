@@ -1,0 +1,59 @@
+#header{
+	position: relative;
+	width: 100%;
+	background: rgb(240, 240, 240);
+	box-shadow: 2px 0px 2px #000;
+}
+#open-nav{
+	margin: 10px;
+	font-size: 3em;
+	cursor: pointer;
+}
+nav{
+	display: none;
+}
+nav a{
+	margin: 0px;
+	display: block;
+	padding: 15px 0px;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+nav a:hover{
+	background: rgb(200,200,200);
+}
+@media screen and (min-width: 950px){ 
+	#header{
+		position: relative;
+		width: 100%;
+		height: 60px;
+	}
+	#open-nav{
+		font-size: 3em;
+		cursor: pointer;
+		display: none;
+	}
+	nav{
+		position: absolute;
+		display: initial;
+		right: 25px;
+		top: 5px;
+	}
+	nav a{
+		display: inline-block;
+		padding: 10px 30px;
+		margin: 0px;
+	}
+	nav a+a{
+		border-left: 1px solid grey;
+
+	}
+	nav a:hover{
+		border-bottom: 2px solid #784FFF;
+		background: transparent;
+	}
+}

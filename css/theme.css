@@ -1,4 +1,130 @@
 body{
-	background: #000;
-	color: #fff;
+	background: #fff;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-size: 2em;
+	display: block;
+	text-align: center;
+}
+#Avatar{
+	width: 45%;
+	height: 45vw;
+	border-radius: 50%;
+	display: block;
+	margin: 10px auto 25px auto;
+	vertical-align: middle;
+}
+.description{
+	text-align: center;
+	font-size: 1em;
+	color: rgb(80,80,80);
+	margin: 10px auto 20px auto;
+}
+hr{
+	width: 90%;
+}
+#networks{
+	width: 100%;
+	text-align: center;
+	margin: 25px auto 25px auto;
+}
+#networks a img{
+	width: 45px;
+	height: 45px;
+	margin: 0px 10px;
+}
+@media screen and (min-width: 480px){
+	body{
+		background: #fff;
+		color: #000;
+	}
+	h1{
+		font-size: 2em;
+		display: block;
+		text-align: center;
+	}
+	#Avatar{
+		width: 30%;
+		height: 30vw;
+		border-radius: 50%;
+		display: block;
+		margin: 10px auto 25px auto;
+		vertical-align: middle;
+	}
+	.description{
+		text-align: center;
+		font-size: 1.5em;
+		color: rgb(80,80,80);
+		margin: 10px auto 20px auto;
+	}
+	hr{
+		width: 90%;
+	}
+	#networks{
+		width: 100%;
+		text-align: center;
+		margin: 25px auto 25px auto;
+	}
+	#networks a img{
+		width: 40px;
+		height: 40px;
+		margin: 0px 10px;
+	}
+	
+}
+@media screen and (min-width: 767px){
+	body{
+		background: #fff;
+		color: #000;
+	}
+	h1{
+		font-size: 2em;
+		display: block;
+		text-align: center;
+	}
+	#Avatar{
+		width: 25%;
+		height: 25vw;
+		border-radius: 50%;
+		display: block;
+		margin: 10px auto 25px auto;
+		vertical-align: middle;
+	}
+	.description{
+		text-align: center;
+		font-size: 1.8em;
+		color: rgb(80,80,80);
+		margin: 10px auto 20px auto;
+	}
+	hr{
+		width: 90%;
+	}
+	#networks{
+		width: 100%;
+		text-align: center;
+		margin: 25px auto 25px auto;
+	}
+	#networks a img{
+		width: 45px;
+		height: 45px;
+		margin: 0px 10px;
+	}
+}
+
+@media screen and (min-width: 950px){ 
+	#Avatar{
+		width: 20%;
+		height: 20vw;
+		border-radius: 50%;
+		display: block;
+		margin: 10px auto 30px auto;
+		vertical-align: middle;
+	}
+	.description{
+		text-align: center;
+		font-size: 2em;
+		color: rgb(80,80,80);
+	}
 }
