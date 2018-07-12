@@ -1,130 +1,90 @@
+body{
+	background: #fff;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
 #projects{
-	position: relative;
-	width: 100%;
-}
-.project-content{
-	background: rgb(230,230,230);
-	position: relative;
-	width: 80%;
-	min-height: 500px;
+	width: 90%;
+	height: auto;
+	margin: 50px auto;
 	display: block;
-	margin: 30px auto;
-	max-width: 300px;
-	padding: 0px 10px 10px 10px;
+}
+.project{
+	position: relative;
+	display: block;
+	width: 90%;
+	height: 260px;
+	margin: 20px auto;	
+	padding: 20px 0px 10px 0px;
 	border: solid grey 1px;
-}
-.project-content:hover{
-	box-shadow: 0px 0px 2px #000; 
-}
-.picture-project{
-	width: 100%;
-	display: block;
-	margin: 20px auto;
-}
-.picture-project img{
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	object-fit: cover;
-	background-position: 0px 0px;
-}
-.about-project{
-	color: black;
+	background: rgba(120,120,120,.2);
 }
 .name-project{
-	margin: 10px;
-	font-weight: bolder;
-	font-size: 1.5em;	
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px 25px;
 }
 .description-project{
-	margin: 10px 10px 60px 10px;
+	margin: 40px 20px 40px 20px;
+	text-align: center;
 }
-.about-project a{
-	margin: 20px;
+.project-link{
+	color: rgb(60, 60, 200);
 	text-decoration: none;
-	color: black;
-	color: rgb(40,40,250);
-	position: absolute;
-	bottom: 5px;
-	left: 5px;
+	margin: 10px;
 }
-@media screen and (min-width: 480px){	
-	.picture-project{
-		width: 100%;
-		display: block;
-		margin: 20px auto;
-	}
-	.picture-project img{
-		width: 100%;
-		height: 100%;
-		background-repeat: no-repeat;
-		object-fit: cover;
-		background-position: 0px 0px;
-	}
+.project-source{
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+}
+.project-pictures{
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+}
+#networks{
+	text-align: center;
+	margin: 80px auto 50px auto;
+}
+#networks img{
+	width: 35px;
+	height: 35px;
+	margin: 10px;
 }
 @media screen and (min-width: 767px){
-	.project-content{
-		width: 35%;
-		margin: 30px 5%;
-		max-width: 350px;
-		padding: 0px 10px 10px 10px;
+	.project{
+		display: inline-block;
+		width: 40%;
+		height: 260px;	
+		padding: 20px 0px 10px 0px;
+		margin: 50px 4%;
 		border: solid grey 1px;
 		float: left;
 	}
-	#projects{
-		width: 80%;
-		display: inline-block;
-		margin: auto;
-		margin: 0px 10%;
+	#networks{
 		clear: both;
 	}
-	.picture-project{
-		width: 100%;
-		height: 60%;
-		display: block;
-		margin: 20px auto;
-	}
-	.picture-project img{
-		background-image: url(../img/projects/ControlAppArduino.png);
-		width: 100%;
-		height: 100%;
-		background-repeat: no-repeat;
-		object-fit: cover;
-		background-position: 0px 0px;
+	#networks img{
+		width: 45px;
+		height: 45px;
+		margin: 10px;
 	}
 }
-@media screen and (min-width: 950px){ 
+@media screen and (min-width: 950px){
 	#projects{
-		width: 90vw;
-		margin: 0px auto;
-		max-width: 1300px;
-		display: block;
+		max-width: 1700px;	
 	}
-	.project-content{
-		width: 25%;
-		height: 700px;
-		display: inline-block;
-		margin: 30px 3%;
-		max-width: 350px;
-		padding: 0px 10px 10px 10px;
+	.project{
+		width: 30%;
+		height: 260px;	
+		padding: 20px 0px 10px 0px;
+		margin: 50px 1%;
 		border: solid grey 1px;
 		float: left;
 	}
-	.picture-project{
-		width: 100%;
-		height: 60%;
-		display: block;
-		margin: 20px auto;
-	}
-	.picture-project img{
-		background-image: url(../img/projects/ControlAppArduino.png);
-		width: 100%;
-		height: 100%;
-		background-repeat: no-repeat;
-		object-fit: cover;
-		background-position: 0px 0px;
-	}
-	hr{
-		clear: both;	
+	#networks img{
+		width: 50px;
+		height: 50px;
 	}
 }

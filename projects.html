@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-16">
 	<title>Iram Martínez</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Android developer website" />
@@ -12,48 +12,43 @@
 	<link rel="stylesheet" href="css/projects.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="js/modernizr.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<div id="header">
+	<header>
 		<span id="open-nav">&#9776;</span>
 		<nav id="navigation">
-			<a href="index.html">Home</a>
-			<a href="projects.html">Projects</a>
+			<a id="change-theme" class="nav-link" href="javascript:void(0)">Light</a>
+			<a class="nav-link" href="index.html">Home</a>
+			<a class="nav-link" href="projects.html">Projects</a>
 		</nav>
-	</div>
+	</header>
 	<div id="projects">
-		<div class="project-content">
-			<div class="picture-project"><img src="img/projects/WeatherApp.png" alt="Google maps Android"></div>
-			<div class="about-project">
-				<span class="name-project">WeatherApp</span>
-				<p class="description-project">Application that uses openweathermap API</p>
-				<a target="_blank" href="https://github.com/IramML/WeatherAppAndroid">Source</a>
-			</div>
+		<div class="project">
+			<p class="name-project">WeatherApp ☀️</p>
+			<p class="description-project">Android App that using OpenWeatherMao API and Google Maps</p>
+			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/WeatherApp">Source</a>
+			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/WeatherApp/tree/master/screenshots">Pictures</a>
 		</div>
-		<div class="project-content">
-			<div class="picture-project"><img src="img/projects/GoogleMapsExample.png" alt="Google maps Android"></div>
-			<div class="about-project">
-				<span class="name-project">Google maps example</span>
-				<p class="description-project">Example of an app using Google maps API</p>
-				<a target="_blank" href="https://github.com/IramML/GoogleMapsAndroidExample">Source</a>
-			</div>
+		<div class="project">
+			<p class="name-project">Google maps example</p>
+			<p class="description-project">Example of an app using Google maps API</p>
+			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/GoogleMapsAndroidExample">Source</a>
+			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/GoogleMapsAndroidExample/tree/master/screenshots">Pictures</a>
 		</div>
-		<div class="project-content">
-			<div class="picture-project"><img src="img/projects/ControlAppArduino.png" alt="Arduino cart Android"></div>
-			<div class="about-project">
-				<p class="name-project">Arduino Bluetooth cart Android</p>
-				<p class="description-project">Arduino Bluetooth controled by Android application</p>
-				<a target="_blank" href="https://github.com/IramML/ArduinoBluetoothCartAndroid">Source</a>
-			</div>
+		<div class="project">
+			<p class="name-project">Arduino Bluetooth cart Android</p>
+			<p class="description-project">Arduino Bluetooth controled by Android applications</p>
+			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/ArduinoBluetoothCartAndroid">Source</a>
+			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/ArduinoBluetoothCartAndroid/tree/master/Images">Pictures</a>
 		</div>
 	</div>
-	
-	<hr>
 	<div id="networks">
-		<a target="_blank" href="https://github.com/IramML"><img src="img/GitHub-Mark-64px.png" alt="Github"></a>
-		<a target="_blank" href="https://twitter.com/Iram_ML"><img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter"></a>	
+		<a target="_blank" href="https://github.com/IramML"><img id="github-network" src="img/GitHub-Mark-64px.png" alt="GitHub"></a>
+		<a target="_blank" href="https://twitter.com/Iram_ML"><img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter"></a>
 	</div>
 	<script src="js/navigationToggle.js"></script>
+	<script>site=1;</script>
+	<script src="js/themes.js"></script>
+	
 </body>
 </html>

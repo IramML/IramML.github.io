@@ -5,32 +5,36 @@
 	<title>Iram Martínez</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Android developer website" />
-	<meta name="keywords" content="Android Developer kotlin and java"/>
+	<meta name="keywords" content="Android Developer, kotlin, java"/>
 	<meta name="author" content="Iram Martinez Lamas"/>
 	<link rel="stylesheet" href="css/normalizer.css">
 	<link rel="stylesheet" href="css/navigation.css">
 	<link rel="stylesheet" href="css/theme.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:300,800" rel="stylesheet">
 	<script src="js/modernizr.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<div id="header">
+	<header>
 		<span id="open-nav">&#9776;</span>
 		<nav id="navigation">
-			<a href="index.html">Home</a>
-			<a href="projects.html">Projects</a>
+			<a id="change-theme" class="nav-link" href="javascript:void(0)">Light</a>
+			<a class="nav-link" href="index.html">Home</a>
+			<a class="nav-link" href="projects.html">Projects</a>
 		</nav>
-	</div>
-	<h1>Iram Martinez</h1>
-	<img src="img/Avatar.png" alt="Avatar" id="Avatar">
-	<p class="description">Android developer | Kotlin | Java</p>
-	<hr>
+	</header>
+	<h2 id="description">
+		My name is <strong>Iram Martinez</strong> <br>
+		my interests are the development of <strong>Android</strong> with <strong>Java | Kotlin</strong> <br>
+		I'm interested in <strong>web</strong> development <br>
+		and I'm a Tech <strong>Geek</strong>👨‍💻
+	</h2>
 	<div id="networks">
-		<a target="_blank" href="https://github.com/IramML"><img src="img/GitHub-Mark-64px.png" alt="Github"></a>
-		<a target="_blank" href="https://twitter.com/Iram_ML"><img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter"></a>	
+		<a target="_blank" href="https://github.com/IramML"><img id="github-network" src="img/GitHub-Mark-64px.png" alt="GitHub"></a>
+		<a target="_blank" href="https://twitter.com/Iram_ML"><img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter"></a>
 	</div>
-	
 	<script src="js/navigationToggle.js"></script>
+	<script>site=0;</script>
+	<script src="js/themes.js"></script>
 </body>
 </html>

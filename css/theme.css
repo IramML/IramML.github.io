@@ -3,89 +3,69 @@ body{
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
-h1{
-	font-size: 2em;
+#description{
+	font-size: 1.3em;
 	display: block;
 	text-align: center;
-	margin: 20px;
-	color: rgb(10,10,100);
+	color: rgb(40,40,40);
+	margin: 20vh 25px 50px 25px;
+	font-weight: normal;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 300;
 }
-#Avatar{
-	width: 45%;
-	height: 45vw;
-	border-radius: 50%;
-	display: block;
-	margin: 10px auto 25px auto;
-	vertical-align: middle;
+strong{
+	font-weight: 800;
 }
-.description{
+#networks{
 	text-align: center;
-	font-size: 1em;
-	color: rgb(80,80,80);
-	margin: 30px auto 50px auto;
+	margin: 80px auto 50px auto;
+}
+#networks img{
+	width: 35px;
+	height: 35px;
+	margin: 10px;
 }
 @media screen and (min-width: 480px){
-	h1{
-		font-size: 2em;
-		display: block;
-		text-align: center;
+	#description{
+		font-size: 2.4em;
+		margin: 20vh 25px 50px 25px;
 	}
-	#Avatar{
-		width: 30%;
-		height: 30vw;
-		border-radius: 50%;
-		display: block;
-		margin: 10px auto 25px auto;
-		vertical-align: middle;
-	}
-	.description{
-		text-align: center;
-		font-size: 1.5em;
-		color: rgb(80,80,80);
-		margin: 30px auto 50px auto;
+	#networks img{
+		width: 45px;
+		height: 45px;
+		margin: 10px;
 	}
 }
 @media screen and (min-width: 767px){
-	h1{
-		font-size: 2em;
-		display: block;
-		text-align: center;
+	#description{
+		font-size: 2.6em;
+		margin: 20vh 25px 50px 25px;
 	}
-	#Avatar{
-		width: 25%;
-		height: 25vw;
-		border-radius: 50%;
-		display: block;
-		margin: 10px auto 25px auto;
-		vertical-align: middle;
-	}
-	.description{
-		text-align: center;
-		font-size: 1.8em;
-		color: rgb(80,80,80);
-		margin: 10px auto 20px auto;
+	#networks img{
+		width: 45px;
+		height: 45px;
+		margin: 10px;
 	}
 }
 
 @media screen and (min-width: 950px){ 
-	h1{
-		font-size: 3em;
+	#description{
+		font-size: 3.4em;
 		display: block;
 		text-align: center;
-		margin: 20px;
+		color: rgb(40,40,40);
+		margin: 20vh auto 50px auto;
 	}
-	#Avatar{
-		width: 20%;
-		height: 20vw;
-		border-radius: 50%;
-		display: block;
-		margin: 10px auto 25px auto;
-		vertical-align: middle;
+	#android-desc{
+		color: rgb(40, 200, 40);
 	}
-	.description{
+	#networks{
 		text-align: center;
-		font-size: 2em;
-		color: rgb(80,80,80);
-		margin: 30px auto 50px auto;
+		margin: 140px auto 50px auto;
+		vertical-align: super;
+	}
+	#networks img{
+		width: 50px;
+		height: 50px;
 	}
 }
