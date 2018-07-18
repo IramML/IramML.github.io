@@ -1,30 +1,43 @@
-var changeTheme=document.getElementById("change-theme");
-var githubImg=document.getElementById("github-network");
-
-switch(site){
-	case 0:
-		var description=document.getElementById("description");
-		break;
-	case 1: 
-		var project = document.getElementsByClassName("project");
-		var linksProject=document.getElementsByClassName("project-link");
-		break;
+var theme;
+var description;
+var project;
+var linksProjec;
+var currentSite;
+function initializeTheme(site){
+	currentSite=site;
+	switch(currentSite){
+		case 0:
+			description=document.getElementById("description");
+			break;
+		case 1: 
+			project = document.getElementsByClassName("project");
+			linksProject=document.getElementsByClassName("project-link");
+			break;
+	}
 }
-var lightTheme=true;
 
-changeTheme.onclick=function(){theme()}
+function saveTheme(value){
+	localStorage.setItem("chosenTheme", value);
+}
+function restoreTheme(){
+	var themeSaved=localStorage.getItem("chosenTheme");
+	if (themeSaved!=null){
+		if (themeSaved=="Light") changeLightTheme();
+		else changeDarkTheme();
+		
+	}
+}
 
-function theme() {
-	if (lightTheme) changeDarkTheme();
-	else changeLightTheme();
-	lightTheme=!lightTheme;
+function switchTheme() {
+	if (theme=="Light") changeDarkTheme();
+	else changeLightTheme(); 
 }
 
 function changeLightTheme() {
 	changeTheme.innerHTML="Light";
 	document.body.style.backgroundColor="white";
 
-	switch(site){
+	switch(currentSite){
 		case 0:
 			description.style.color="#282828";
 			break;
@@ -38,12 +51,14 @@ function changeLightTheme() {
 			break;
 	}
 	githubImg.src="img/GitHub-Mark-64px.png"
+	theme="Light";
+	saveTheme(theme);
 }
 
 function changeDarkTheme() {
 	changeTheme.innerHTML="Dark";
 	document.body.style.backgroundColor="Black";
-	switch(site){
+	switch(currentSite){
 		case 0:
 			description.style.color="white";
 			break;
@@ -57,4 +72,6 @@ function changeDarkTheme() {
 			break;
 	}
 	githubImg.src="img/GitHub-Mark-64px-white.png"
+	theme="Dark;"
+	saveTheme(theme);
 }

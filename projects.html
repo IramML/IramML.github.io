@@ -12,8 +12,10 @@
 	<link rel="stylesheet" href="css/projects.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="js/modernizr.js"></script>
+	<script src="js/themes.js"></script>
+	<script src="js/navigationToggle.js"></script>
 </head>
-<body>
+<body onload="initialize(1)">
 	<header>
 		<span id="open-nav">&#9776;</span>
 		<nav id="navigation">
@@ -24,8 +26,14 @@
 	</header>
 	<div id="projects">
 		<div class="project">
+			<p class="name-project">PhotoPhilters</p>
+			<p class="description-project">Application that uses filters as instagram with libraries Image filter modified by AndroidHive and Dexter</p>
+			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/PhotoFiltersApp">Source</a>
+			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/PhotoFiltersApp/tree/master/screenshots">Pictures</a>
+		</div>
+		<div class="project">
 			<p class="name-project">WeatherApp ☀️</p>
-			<p class="description-project">Android App that using OpenWeatherMao API and Google Maps</p>
+			<p class="description-project">Android App that using OpenWeatherMap API and Google Maps</p>
 			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/WeatherApp">Source</a>
 			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/WeatherApp/tree/master/screenshots">Pictures</a>
 		</div>
@@ -46,9 +54,5 @@
 		<a target="_blank" href="https://github.com/IramML"><img id="github-network" src="img/GitHub-Mark-64px.png" alt="GitHub"></a>
 		<a target="_blank" href="https://twitter.com/Iram_ML"><img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter"></a>
 	</div>
-	<script src="js/navigationToggle.js"></script>
-	<script>site=1;</script>
-	<script src="js/themes.js"></script>
-	
 </body>
 </html>
