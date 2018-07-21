@@ -50,7 +50,8 @@ function changeLightTheme() {
 			}
 			break;
 	}
-	githubImg.src="img/GitHub-Mark-64px.png"
+	githubImg.src="img/GitHub-black.png"
+	twitterImg.src="img/twitter-black.png";
 	theme="Light";
 	saveTheme(theme);
 }
@@ -71,7 +72,8 @@ function changeDarkTheme() {
 			}
 			break;
 	}
-	githubImg.src="img/GitHub-Mark-64px-white.png"
+	githubImg.src="img/GitHub-white.png"
+	twitterImg.src="img/twitter-white.png";
 	theme="Dark;"
 	saveTheme(theme);
 }

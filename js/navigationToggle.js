@@ -2,6 +2,7 @@ var openNav;
 var navigation;
 var changeTheme;
 var githubImg;
+var twitterImg;
 
 var navOpen=false;
 
@@ -11,6 +12,7 @@ function initialize(site){
 	navigation=document.getElementById("navigation");
 	changeTheme=document.getElementById("change-theme");
 	githubImg=document.getElementById("github-network");
+	twitterImg=document.getElementById("twitter-network");
 
 	openNav.onclick=function(){toggle()};
 	changeTheme.onclick=function(){switchTheme()};

@@ -29,7 +29,7 @@ header{
 }
 @media screen and (min-width: 950px){
 	header{
-		height: 60px;
+		height: 52px;
 	} 
 	#open-nav{
 		display: none;
@@ -39,14 +39,14 @@ header{
 		right: 25px;
 		height: auto;
 		overflow: visible;
-		vertical-align: center;
 	}
 	.nav-link{
+		height: 100%;
 		text-decoration: none;
 		display: inline-block;
 		text-align: center;
-		font-size: 1.8em;
-		padding: 8px 15px;
+		font-size: 1.6em;
+		padding: 10px 15px;
 		
 	}
 	.nav-link:hover{
