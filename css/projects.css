@@ -3,7 +3,7 @@ body{
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
-#projects{
+.projects{
 	width: 90%;
 	height: auto;
 	margin: 50px auto;
@@ -45,6 +45,32 @@ body{
 	text-align: center;
 	margin: 20px 25px;
 	font-weight: 800;
+}
+.java-lang{
+	background: #b07219;
+}
+.kotlin-lang{
+	background: #F18E33;
+}
+.cpp-lang{
+	background: #f34b7d;
+}
+.language-used{
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin: 25px 0px 10px 0px;
+}
+.language{
+	display: inline-block;
+	width: 20%;
+	border-radius: 6px;
+	margin: 0px 10px;
+	padding: 4px 0px;
+}
+.language-used span{
+	color: white;
+	cursor: context-menu;
 }
 .description-project{
 	margin: 40px 25px 80px 25px;
@@ -126,7 +152,7 @@ body{
 	.project{
 		display: inline-block;
 		width: 40%;
-		height: 280px;	
+		height: 300px;	
 		padding: 20px 0px 10px 0px;
 		margin: 50px 4%;
 		border: solid grey 1px;
@@ -145,12 +171,17 @@ body{
 	}
 }
 @media screen and (min-width: 950px){
-	#projects{
+	.language{
+		margin: 0px 20px;
+		width: 15%;
+		padding: 6px 0px;
+	}
+	.projects{
 		max-width: 1700px;	
 	}
 	.project{
 		width: 30%;
-		height: 300px;	
+		height: 310px;	
 		padding: 20px 0px 10px 0px;
 		margin: 50px 1%;
 		float: left;

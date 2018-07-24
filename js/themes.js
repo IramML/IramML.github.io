@@ -1,8 +1,9 @@
-var theme;
+var theme="Light";
 var description;
 var project;
 var linksProjec;
 var currentSite;
+
 function initializeTheme(site){
 	currentSite=site;
 	switch(currentSite){
@@ -14,6 +15,7 @@ function initializeTheme(site){
 			linksProject=document.getElementsByClassName("project-link");
 			break;
 	}
+	restoreTheme();
 }
 
 function saveTheme(value){
@@ -36,7 +38,7 @@ function switchTheme() {
 function changeLightTheme() {
 	changeTheme.innerHTML="Light";
 	document.body.style.backgroundColor="white";
-
+	document.body.style.color="black";
 	switch(currentSite){
 		case 0:
 			description.style.color="#282828";
@@ -59,6 +61,7 @@ function changeLightTheme() {
 function changeDarkTheme() {
 	changeTheme.innerHTML="Dark";
 	document.body.style.backgroundColor="Black";
+	document.body.style.color="white";
 	switch(currentSite){
 		case 0:
 			description.style.color="white";

@@ -17,7 +17,6 @@ function initialize(site){
 	openNav.onclick=function(){toggle()};
 	changeTheme.onclick=function(){switchTheme()};
 	initializeTheme(site);
-	restoreTheme();
 }
 
 function toggle(){
