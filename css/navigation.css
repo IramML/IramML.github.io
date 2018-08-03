@@ -27,6 +27,44 @@ header{
 .nav-link:hover{
 	background: rgb(30, 30, 30);
 }
+#networks img{
+	width: 35px;
+	height: 35px;
+	margin: 10px;
+}
+#networks img:nth-child(0):hover{
+	-webkit-animation: 1s gum 1;
+	-moz-animation: 1s gum 1;
+	animation: 1s gum 1;
+}
+#networks img:nth-child(1):hover{
+	-webkit-animation: 1s gum 1;
+	-moz-animation: 1s gum 1;
+	animation: 1s gum 1;
+}
+@-webkit-keyframes gum{
+	30%{
+		-webkit-transform: scaleX(1.25) scaleY(0.75);
+	}
+	50%{
+		-webkit-transform: scaleX(0.75) scaleY(1.25);
+	}
+	60%{
+		-webkit- transform: scaleX(1.10) scaleY(0.85);
+	}
+}
+@media screen and (min-width: 480px){
+	#networks img{
+		width: 35px;
+		height: 35px;
+		margin: 10px;
+	}
+}
+@media screen and (min-width: 767px){
+	#networks{
+		clear: both;
+	}
+}
 @media screen and (min-width: 950px){
 	header{
 		height: 52px;
@@ -51,5 +89,9 @@ header{
 	}
 	.nav-link:hover{
 		background: rgb(30, 30, 30);
+	}
+	#networks img{
+		width: 40px;
+		height: 40px;
 	}
 }

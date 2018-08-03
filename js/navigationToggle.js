@@ -3,7 +3,6 @@ var navigation;
 var changeTheme;
 var githubImg;
 var twitterImg;
-
 var navOpen=false;
 
 

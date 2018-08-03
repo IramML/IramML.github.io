@@ -1,6 +1,4 @@
 body{
-	background: #fff;
-	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
 .projects{
@@ -17,7 +15,7 @@ body{
 	margin: 20px auto;	
 	padding: 20px 0px 10px 0px;
 	border: solid grey 2px;
-	background: rgba(255,255,255,.2);
+	background: rgba(255,255,255,.1);
 	border-radius: 5%;
 }
 .project{
@@ -78,7 +76,6 @@ body{
 	font-size: 1.2em;
 }
 .project-link{
-	color: rgb(60, 60, 200);
 	text-decoration: none;
 	margin: 10px;
 }
@@ -122,32 +119,6 @@ body{
 		opacity: 1;
 	}
 }
-#networks img{
-	width: 35px;
-	height: 35px;
-	margin: 10px;
-}
-#networks img:nth-child(0):hover{
-	-webkit-animation: 1s gum 1;
-	-moz-animation: 1s gum 1;
-	animation: 1s gum 1;
-}
-#networks img:nth-child(1):hover{
-	-webkit-animation: 1s gum 1;
-	-moz-animation: 1s gum 1;
-	animation: 1s gum 1;
-}
-@-webkit-keyframes gum{
-	30%{
-		-webkit-transform: scaleX(1.25) scaleY(0.75);
-	}
-	50%{
-		-webkit-transform: scaleX(0.75) scaleY(1.25);
-	}
-	60%{
-		-webkit- transform: scaleX(1.10) scaleY(0.85);
-	}
-}
 @media screen and (min-width: 767px){
 	.project{
 		display: inline-block;
@@ -155,20 +126,13 @@ body{
 		height: 300px;	
 		padding: 20px 0px 10px 0px;
 		margin: 50px 4%;
-		border: solid grey 1px;
+		border: solid grey 2px;
 		float: left;
 	}
 	.description-project{
 		margin: 40px 30px;
 	}
-	#networks{
-		clear: both;
-	}
-	#networks img{
-		width: 45px;
-		height: 45px;
-		margin: 10px;
-	}
+
 }
 @media screen and (min-width: 950px){
 	.language{
@@ -188,9 +152,5 @@ body{
 	}
 	.description-project{
 		margin: 40px;
-	}
-	#networks img{
-		width: 50px;
-		height: 50px;
 	}
 }

@@ -1,13 +1,10 @@
 body{
-	background: #fff;
-	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
 #description{
 	font-size: 1.4em;
 	display: block;
 	text-align: center;
-	color: rgb(40,40,40);
 	margin: 20vh 25px 50px 25px;
 	font-weight: normal;
 	font-family: 'Dosis', sans-serif;
@@ -46,73 +43,26 @@ strong{
 		opacity: 1;
 	}
 }
-#networks img{
-	width: 35px;
-	height: 35px;
-	margin: 10px;
-}
-#networks img:nth-child(0):hover{
-	-webkit-animation: 1s gum 1;
-	-moz-animation: 1s gum 1;
-	animation: 1s gum 1;
-}
-#networks img:nth-child(1):hover{
-	-webkit-animation: 1s gum 1;
-	-moz-animation: 1s gum 1;
-	animation: 1s gum 1;
-}
-@-webkit-keyframes gum{
-	30%{
-		-webkit-transform: scaleX(1.25) scaleY(0.75);
-	}
-	50%{
-		-webkit-transform: scaleX(0.75) scaleY(1.25);
-	}
-	60%{
-		-webkit- transform: scaleX(1.10) scaleY(0.85);
-	}
-}
 @media screen and (min-width: 480px){
 	#description{
 		font-size: 2.4em;
 		margin: 20vh 25px 50px 25px;
 	}
-	#networks img{
-		width: 45px;
-		height: 45px;
-		margin: 10px;
-	}
 }
 @media screen and (min-width: 767px){
 	#description{
 		font-size: 2.6em;
-		margin: 20vh 25px 50px 25px;
-	}
-	#networks img{
-		width: 45px;
-		height: 45px;
-		margin: 10px;
 	}
 }
 
 @media screen and (min-width: 950px){ 
 	#description{
-		font-size: 3.2em;
+		font-size: 2.8em;
 		display: block;
 		text-align: center;
-		color: rgb(40,40,40);
-		margin: 20vh auto 50px auto;
+		margin: 15vh 50px 50px 50px;
 	}
 	#android-desc{
 		color: rgb(40, 200, 40);
-	}
-	#networks{
-		text-align: center;
-		margin: 140px auto 50px auto;
-		vertical-align: super;
-	}
-	#networks img{
-		width: 50px;
-		height: 50px;
 	}
 }
