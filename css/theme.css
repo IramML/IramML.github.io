@@ -9,12 +9,12 @@ body{
 	font-weight: normal;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 300;
-	-webkit-animation: 1s rebote 1;
-	-moz-animation: 1s rebote 1;
-	animation: 1s rebote 1;
+	-webkit-animation: 1s ricochet 1;
+	-moz-animation: 1s ricochet 1;
+	animation: 1s ricochet 1;
 }
 
-@-webkit-keyframes rebote{
+@-webkit-keyframes ricochet{
 	0%{
 		transform: translateX(-2000px);
 	}
@@ -27,21 +27,6 @@ body{
 }
 strong{
 	font-weight: 800;
-}
-#networks{
-	text-align: center;
-	margin: 80px auto 50px auto;
-	-webkit-animation: 1s fadeIn 1;
-	-moz-animation: 1s fadeIn 1;
-	animation: 1s fadeIn 1;
-}
-@-webkit-keyframes fadeIn{
-	0%{
-		opacity: 0;
-	}
-	100%;{
-		opacity: 1;
-	}
 }
 @media screen and (min-width: 480px){
 	#description{

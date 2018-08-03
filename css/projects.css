@@ -103,22 +103,6 @@ body{
 	bottom: 25px;
 	right: 25px;
 }
-
-#networks{
-	text-align: center;
-	margin: 80px auto 50px auto;
-	-webkit-animation: 1s fadeIn 1;
-	-moz-animation: 1s fadeIn 1;
-	animation: 1s fadeIn 1;
-}
-@-webkit-keyframes fadeIn{
-	0%{
-		opacity: 0;
-	}
-	100%;{
-		opacity: 1;
-	}
-}
 @media screen and (min-width: 767px){
 	.project{
 		display: inline-block;

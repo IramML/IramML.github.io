@@ -27,6 +27,21 @@ header{
 .nav-link:hover{
 	background: rgb(30, 30, 30);
 }
+#networks{
+	text-align: center;
+	margin: 80px auto 50px auto;
+	-webkit-animation: 1s fadeIn 1;
+	-moz-animation: 1s fadeIn 1;
+	animation: 1s fadeIn 1;
+}
+@-webkit-keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%;{
+		opacity: 1;
+	}
+}
 #networks img{
 	width: 35px;
 	height: 35px;
@@ -89,6 +104,9 @@ header{
 	}
 	.nav-link:hover{
 		background: rgb(30, 30, 30);
+	}
+	#networks{
+		margin: 130px auto;
 	}
 	#networks img{
 		width: 40px;
