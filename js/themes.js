@@ -3,18 +3,26 @@ var description;
 var project;
 var linksProjec;
 var currentSite;
+var navigation;
+var changeTheme;
+var githubImg;
+var twitterImg;
 
-function initializeTheme(site){
-	currentSite=site;
-	switch(currentSite){
-		case 0:
-			description=document.getElementById("description");
-			break;
-		case 1: 
-			project = document.getElementsByClassName("project");
-			linksProject=document.getElementsByClassName("project-link");
-			break;
-	}
+initialize();
+function initialize(){
+	navigation=document.getElementById("navigation");
+	changeTheme=document.getElementById("change-theme");
+	githubImg=document.getElementById("github-network");
+	twitterImg=document.getElementById("twitter-network");
+
+	changeTheme.onclick=function(){switchTheme()};
+	initializeTheme();
+}
+
+function initializeTheme(){
+	description=document.getElementById("description");
+	project = document.getElementsByClassName("project");
+	linksProject=document.getElementsByClassName("project-link");
 	restoreTheme();
 }
 
@@ -39,18 +47,12 @@ function changeLightTheme() {
 	changeTheme.innerHTML="Light";
 	document.body.style.backgroundColor="white";
 	document.body.style.color="black";
-	switch(currentSite){
-		case 0:
-			description.style.color="#282828";
-			break;
-		case 1:
-			for(var i=0; i<project.length; i++){
-				project[i].style.color="black";
-			}
-			for(var i=0; i<linksProject.length; i++){
-				linksProject[i].style.color="#3c3cc8";
-			}
-			break;
+	description.style.color="#282828";
+	for(var i=0; i<project.length; i++){
+		project[i].style.color="black";
+	}
+	for(var i=0; i<linksProject.length; i++){
+		linksProject[i].style.color="#3c3cc8";
 	}
 	githubImg.src="img/GitHub-black.png"
 	twitterImg.src="img/twitter-black.png";
@@ -62,18 +64,12 @@ function changeDarkTheme() {
 	changeTheme.innerHTML="Dark";
 	document.body.style.backgroundColor="Black";
 	document.body.style.color="white";
-	switch(currentSite){
-		case 0:
-			description.style.color="white";
-			break;
-		case 1: 
-			for(var i=0; i<project.length; i++){
-				project[i].style.color="white";
-			}
-			for(var i=0; i<linksProject.length; i++){
-				linksProject[i].style.color="#96c896";
-			}
-			break;
+	description.style.color="white";
+	for(var i=0; i<project.length; i++){
+		project[i].style.color="white";
+	}
+	for(var i=0; i<linksProject.length; i++){
+		linksProject[i].style.color="#96c896";
 	}
 	githubImg.src="img/GitHub-white.png"
 	twitterImg.src="img/twitter-white.png";
