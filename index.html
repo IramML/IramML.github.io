@@ -14,76 +14,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Dosis:300,800" rel="stylesheet">
 </head>
 <body>
-	<div id="main-content">
-		<header>
-			<nav id="navigation">
-				<a id="change-theme" class="nav-link" href="javascript:void(0)">Light</a>
-			</nav>
-		</header>
-		<h1 id="description">
-			My name is <strong>Iram Martinez</strong> <br>
-			my interests are the development of <strong>Android</strong> with <strong>Java | Kotlin</strong>,<br>
-			I'm interested in <strong>web</strong> development<br>
-			<strong>Front-end | Back-end</strong>,<br>
-			hardware enthusiast <br>	
-			and I'm a Tech <strong>Geek</strong>👨‍💻
-		</h1>
-	</div>
-	<hr>	
-	<h2 class="headline">Projects</h2>
-	<div class="projects">
-		<div class="project">
-			<p class="name-project">CheckinsFoursquare Android</p>
-			<div class="language-used">
-				<div class="language kotlin-lang">
-					<span>Kotlin</span>
-				</div>
-			</div>
-			<p class="description-project">Check-ins Android application that uses Foursquare API</p>
-			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/Check-insFoursquare">Source</a>
-			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/Check-insFoursquare/tree/master/Images">Pictures</a>
+	
+	<div id="full-page">
+		<div class="blur">
+			<header>
+				<span id="open-nav">&#9776;</span>
+				<nav id="navigation">
+					<a id="change-theme" class="nav-link" href="javascript:void(0)">Home</a>
+					<a id="change-theme" class="nav-link" href="projects.html">Projects</a>
+				</nav>
+			</header>
+			<div id="title">
+					<h1>I am <strong>Iram Martinez</strong></h1>
+					<h2>Android developer | Java | Kotlin</h2>
+				</div>	
+			<div id="networks">
+				<a target="_blank" href="https://github.com/IramML"><img id="github-network" src="img/GitHub-white.png" alt="GitHub"></a>
+				<a target="_blank" href="https://twitter.com/IramML_"><img src="img/twitter-white.png" alt="Twitter" id="twitter-network"></a>
+			</div>	
 		</div>
-		<div class="project">
-			<p class="name-project">PhotoPhilters</p>
-			<div class="language-used">
-				<div class="language java-lang">
-					<span>Java</span>
-				</div>
-			</div>
-			<p class="description-project">Application that uses filters as instagram with libraries Image filter modified by AndroidHive and Dexter</p>
-			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/PhotoFiltersApp">Source</a>
-			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/PhotoFiltersApp/tree/master/screenshots">Pictures</a>
-		</div>
-		<div class="project">
-			<p class="name-project">WeatherApp ☀️</p>	
-			<div class="language-used">
-				<div class="language kotlin-lang">
-					<span>Kotlin</span>
-				</div>
-			</div>
-			<p class="description-project">Android App that using OpenWeatherMap API and Google Maps</p>
-			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/WeatherApp">Source</a>
-			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/WeatherApp/tree/master/screenshots">Pictures</a>
-		</div>
-		<div class="project">
-			<p class="name-project">Arduino Bluetooth cart and Android</p>
-			<div class="language-used">
-				<div class="language java-lang">
-					<span>Java</span>
-				</div>
-				<div class="language cpp-lang">
-					<span>C++</span>
-				</div>
-			</div>
-			<p class="description-project">Arduino Bluetooth controled by Android applications</p>
-			<a target="_blank" class="project-source project-link" href="https://github.com/IramML/ArduinoBluetoothCartAndroid">Source</a>
-			<a target="_blank" class="project-pictures project-link" href="https://github.com/IramML/ArduinoBluetoothCartAndroid/tree/master/Images">Pictures</a>
-		</div>
-	</div>
-	</div>
-		<div id="networks">
-		<a target="_blank" href="https://github.com/IramML"><img id="github-network" src="img/GitHub-black.png" alt="GitHub"></a>
-		<a target="_blank" href="https://twitter.com/IramML_"><img src="img/twitter-black.png" alt="Twitter" id="twitter-network"></a>
 	</div>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123538403-1"></script>
@@ -94,7 +43,7 @@
 
 	  gtag('config', 'UA-123538403-1');
 	</script>
+	<script src="js/navigationToggle.js"></script>
 	<script src="js/modernizr.js"></script>
-	<script src="js/themes.js"></script>
 </body>
 </html>
