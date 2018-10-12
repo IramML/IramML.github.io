@@ -1,41 +1,21 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
+	color: #000;
+	background: rgb(240, 240, 240);
 }
-#full-page{
-	position: relative;
+header{
 	width: 100%;
-	height: 100vh;
-	background-image: url("../img/fullPageBackground.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
+	height: 75px;
+	background: #0b1c21;
 }
-.blur{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, .4);
+#front{
+	background: rgb(250, 250, 250);
+	padding: 120px 20px 150px 20px;
 }
 #title{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	text-align: center;
 	width: 100%;
 	animation: 1s ricochet 1;
-}
-@-webkit-keyframes ricochet{
-	0%{
-		transform: translate(-2000px, -50%);
-	}
-	25%{
-		transform: translate(-45%, -50%);
-	}
-	70%{
-		transform: translate(-55%, -50%);
-	}
 }
 #title h1{
 	font-size: 2.4em;
@@ -53,10 +33,6 @@ strong{
 	font-weight: 800;
 }
 #networks{
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	text-align: center;
 	margin: 80px auto 50px auto;
 	animation: 1s fadeIn 1;
@@ -91,12 +67,117 @@ strong{
 		transform: scaleX(1.10) scaleY(0.85);
 	}
 }
+h2{
+	text-align: center;
+	font-size: 2.2em;
+	margin: 50px 25px;
+	font-weight: 900;
+}
+.projects{
+	width: 90%;
+	height: auto;
+	margin: 50px auto;
+	display: block;
+}
+.project{
+	position: relative;
+	display: block;
+	width: 90%;
+	height: auto;
+	margin: 20px auto;	
+	padding: 20px 0px 10px 0px;
+	background: #fff;
+    border-radius: 5%;
+    color: #000;
+    transform: translate(0);
+	animation: 1s fadeAndWidth 1;
+	transform-origin: top center;
+}
+@keyframes fadeAndWidth{
+	0%{
+		opacity: 0;
+		width: 0%;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.name-project{
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px 25px;
+	font-weight: 800;
+}
+.java-lang{
+	background: #b07219;
+}
+.kotlin-lang{
+	background: #F18E33;
+}
+.cpp-lang{
+	background: #f34b7d;
+}
+.language-used{
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin: 25px 0px 10px 0px;
+}
+.language{
+	display: inline-block;
+	width: 20%;
+	border-radius: 6px;
+	margin: 0px 10px;
+	padding: 4px 0px;
+}
+.language-used span{
+	color: white;
+	cursor: context-menu;
+}
+.description-project{
+	position: relative;
+	margin: 40px 25px 80px 25px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.links-projects{
+	position: relative;
+	padding: 10px 0px 45px 0px;
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+}
+.project-link{
+	background: rgb(11, 183, 137);
+	border: solid rgb(11, 183, 137);
+	border-radius: 10px;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+.link1, .link2{
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+.project-link:hover{
+	transition: color 0.5s, background 0.5s;
+	background: #fff;
+	color: rgb(11, 183, 137);
+}
 @media screen and (min-width: 480px){
 	#title h1{
 		font-size: 3em;
 	}
 	#title h2{
 		font-size: 1.8em;
+	}
+	.links-projects{
+		height: auto;
+	}
+	.projects{
+		max-width: 400px;	
+
 	}
 	#networks img{
 		width: 35px;
@@ -106,6 +187,7 @@ strong{
 	#networks{
 		margin: 0px auto 0px auto;
 	}
+	
 }
 @media screen and (min-width: 767px){
 	#networks{
@@ -121,6 +203,28 @@ strong{
 		width: 40px;
 		height: 40px;
 	}
+	.links-projects{
+		height: auto;
+	}
+	.projects{
+		max-width: none;	
+	}
+	.project{
+		display: inline-block;
+		width: 40%;
+		height: 350px;	
+		padding: 20px 0px 10px 0px;
+		margin: 50px 4%;
+		float: left;
+	}
+	.language{
+		margin: 0px 20px;
+		width: 20%;
+		padding: 6px 0px;
+	}
+	.description-project{
+		margin: 40px 30px;
+    }
 }
 @media screen and (min-width: 950px){ 
 	#networks{
@@ -130,4 +234,25 @@ strong{
 		width: 45px;
 		height: 45px;
 	}
+	.language{
+		margin: 0px 20px;
+		width: 20%;
+		padding: 6px 0px;
+	}
+	.language-used{
+		height: 50px;
+	}
+	.projects{
+		max-width: 1700px;
+	}
+	.project{
+		width: 30%;
+		height: 390px;	
+		padding: 20px 0px 10px 0px;
+		margin: 50px 1%;
+		float: left;
+	}
+	.description-project{
+		margin: 40px;
+    }
 }
