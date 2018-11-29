@@ -1,36 +1,134 @@
 body{
-	font-family: 'Roboto', sans-serif;
-	color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
 	background: rgb(240, 240, 240);
 }
 header{
-	width: 100%;
-	height: 75px;
-	background: #0b1c21;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    background: #fff;
+    padding-bottom: 20px;
+    animation: 1s fadeIn 1;
 }
-#front{
-	background: rgb(250, 250, 250);
-	padding: 120px 20px 150px 20px;
+#bar{
+    background: #0b1c21;
+    width: 100%;
+    height: 20vw;
+    margin-bottom: 25vw;
+    box-shadow: #000 0px 0px 5px;
 }
-#title{
+#avatar{
+    position: absolute;
+    background-image: url('../img/avatar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 30vw;
+    height: 30vw;
+    display: block;
+    margin: auto;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: #000 0px 0px 5px;
+}
+#name{
+    color: #33161F;
+    font-weight: bold;
+    font-size: 2em;
+}
+h2{
+    color: #33161F;
+}
+h3{
+    animation: 1s fadeIn 1;
+	text-align: center;
+	font-size: 1.8em;
+	margin: 50px 25px;
+	font-weight: 600;
+}
+.projects{
+	width: 90%;
+	height: auto;
+	margin: 50px auto;
+	display: block;
+}
+.project{
+	position: relative;
+	display: block;
+	width: 90%;
+	height: auto;
+	margin: 20px auto;	
+	padding: 20px 0px 10px 0px;
+	background: #fff;
+    border-radius: 5%;
+    color: #000;
+    transform: translate(0);
+	animation: 1s fadeIn 1;
+	transform-origin: top center;
+}
+.name-project{
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px 25px;
+	font-weight: 600;
+}
+.java-lang{
+	background: #b07219;
+}
+.kotlin-lang{
+	background: #F18E33;
+}
+.language-used{
 	text-align: center;
 	width: 100%;
-	animation: 1s fadeIn 1;
+	display: block;
+	margin: 25px 0px 10px 0px;
 }
-#title h1{
-	font-size: 2.4em;
-	font-family: 'Dosis', sans-serif;
-	font-weight: 300;
-	margin: 10px 25px;
+.language{
+	display: inline-block;
+	width: 20%;
+	border-radius: 14px;
+	margin: 0px 10px;
+	padding: 8px 4px;
 }
-#title h2{
-	font-size: 1.5em;
-	font-family: 'Dosis', sans-serif;
-	font-weight: 300;
-	margin: 10px 25px;
+.language-used span{
+	color: white;
+	cursor: context-menu;
 }
-strong{
-	font-weight: 800;
+.description-project{
+	position: relative;
+	margin: 40px 25px 80px 25px;
+	text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.links-projects{
+	position: relative;
+	padding: 10px 0px 45px 0px;
+	width: 100%;
+}
+.project-link{
+	background: #1A5A6D;
+	border: solid #1A5A6D;
+	border-radius: 10px;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+.link1, .link2{
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+.project-link:hover{
+	transition: color 0.5s, background 0.5s;
+	background: #fff;
+	color: #1A5A6D;
 }
 #networks{
 	text-align: center;
@@ -67,108 +165,28 @@ strong{
 		transform: scaleX(1.10) scaleY(0.85);
 	}
 }
-h2{
-	text-align: center;
-	font-size: 2.2em;
-	margin: 50px 25px;
-	font-weight: 900;
-}
-.projects{
-	width: 90%;
-	height: auto;
-	margin: 50px auto;
-	display: block;
-}
-.project{
-	position: relative;
-	display: block;
-	width: 90%;
-	height: auto;
-	margin: 20px auto;	
-	padding: 20px 0px 10px 0px;
-	background: #fff;
-    border-radius: 5%;
-    color: #000;
-    transform: translate(0);
-	animation: 1s fadeIn 1;
-	transform-origin: top center;
-}
-.name-project{
-	font-size: 1.5em;
-	text-align: center;
-	margin: 20px 25px;
-	font-weight: 800;
-}
-.java-lang{
-	background: #b07219;
-}
-.kotlin-lang{
-	background: #F18E33;
-}
-.cpp-lang{
-	background: #f34b7d;
-}
-.language-used{
-	text-align: center;
-	width: 100%;
-	display: block;
-	margin: 25px 0px 10px 0px;
-}
-.language{
-	display: inline-block;
-	width: 20%;
-	border-radius: 6px;
-	margin: 0px 10px;
-	padding: 4px 0px;
-}
-.language-used span{
-	color: white;
-	cursor: context-menu;
-}
-.description-project{
-	position: relative;
-	margin: 40px 25px 80px 25px;
-	text-align: center;
-	font-size: 1.2em;
-}
-.links-projects{
-	position: relative;
-	padding: 10px 0px 45px 0px;
-	width: 100%;
-	position: absolute;
-	bottom: 0%;
-}
-.project-link{
-	background: rgb(11, 183, 137);
-	border: solid rgb(11, 183, 137);
-	border-radius: 10px;
-	padding: 10px;
-	text-decoration: none;
-	color: #fff;
-}
-.link1, .link2{
-	width: 50%;
-	text-align: center;
-	float: left;
-}
-.project-link:hover{
-	transition: color 0.5s, background 0.5s;
-	background: #fff;
-	color: rgb(11, 183, 137);
-}
 @media screen and (min-width: 480px){
-	#title h1{
-		font-size: 3em;
-	}
-	#title h2{
-		font-size: 1.8em;
-	}
-	.links-projects{
-		height: auto;
-	}
-	.projects{
+    #bar{
+        height: 75px;
+        margin-bottom: 10vw;
+    }
+    #avatar{
+        position: absolute;
+        width: 18vw;
+        height: 18vw;
+        top: 25%;
+    }
+    #name{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    .projects{
 		max-width: 400px;	
-
+    }
+    .links-projects{
+		height: auto;
 	}
 	#networks img{
 		width: 35px;
@@ -178,61 +196,75 @@ h2{
 	#networks{
 		margin: 0px auto 0px auto;
 	}
-	
 }
 @media screen and (min-width: 767px){
-	#networks{
-		clear: both;
-	}
-	#title h1{
-		font-size: 4em;
-	}
-	#title h2{
-		font-size: 3em;
-	}
-	#networks img{
-		width: 40px;
-		height: 40px;
-	}
-	.links-projects{
-		height: auto;
-	}
+    #bar{
+        height: 75px;
+        margin-bottom: 8vw;
+    }
+    #avatar{
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        top: 25%;
+    }
+    #name{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 2em;
+    }
 	.projects{
 		max-width: none;	
 	}
 	.project{
 		display: inline-block;
-		width: 40%;
-		height: 350px;	
+		width: 42%;
+		height: 360px;	
 		padding: 20px 0px 10px 0px;
 		margin: 50px 4%;
 		float: left;
 	}
-	.language{
-		margin: 0px 20px;
-		width: 20%;
-		padding: 6px 0px;
-	}
 	.description-project{
-		margin: 40px 30px;
+		margin: 40px;
     }
-}
-@media screen and (min-width: 950px){ 
-	#networks{
-		margin: 100px auto 25px auto;
-	}
-	#networks img{
-		width: 45px;
-		height: 45px;
-	}
-	.language{
+    .language{
 		margin: 0px 20px;
 		width: 20%;
 		padding: 6px 0px;
 	}
 	.language-used{
 		height: 50px;
+    }
+
+    .links-projects{
+        position: absolute;
+        padding: 10px 0px 45px 0px;
+        width: 100%;
+        bottom: 0%;
+        float: top;
+    }
+    #networks{
+		clear: both;
 	}
+}
+@media screen and (min-width: 950px){ 
+    #bar{
+        height: 75px;
+        margin-bottom: 5vw;
+    }
+    #avatar{
+        position: absolute;
+        width: 8vw;
+        height: 8vw;
+        top: 25%;
+    }
+    #name{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 2em;
+    }
 	.projects{
 		max-width: 1700px;
 	}
@@ -246,4 +278,27 @@ h2{
 	.description-project{
 		margin: 40px;
     }
+    .language{
+		margin: 0px 20px;
+		width: 20%;
+		padding: 6px 0px;
+	}
+	.language-used{
+		height: 50px;
+    }
+
+    .links-projects{
+        position: absolute;
+        padding: 10px 0px 45px 0px;
+        width: 100%;
+        bottom: 0%;
+        float: top;
+    }
+    #networks{
+		margin: 100px auto 25px auto;
+	}
+	#networks img{
+		width: 45px;
+		height: 45px;
+	}
 }
