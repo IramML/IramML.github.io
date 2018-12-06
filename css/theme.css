@@ -67,9 +67,7 @@ h3{
 	background: #fff;
     border-radius: 5%;
     color: #000;
-    transform: translate(0);
 	animation: 1s fadeIn 1;
-	transform-origin: top center;
 }
 .name-project{
 	font-size: 1.5em;
@@ -77,18 +75,14 @@ h3{
 	margin: 20px 25px;
 	font-weight: 600;
 }
-.java-lang{
-	background: #b07219;
-}
-.kotlin-lang{
-	background: #F18E33;
-}
 .language-used{
 	text-align: center;
 	width: 100%;
 	display: block;
 	margin: 25px 0px 10px 0px;
 }
+
+
 .language{
 	display: inline-block;
 	width: 20%;
@@ -99,6 +93,18 @@ h3{
 .language-used span{
 	color: white;
 	cursor: context-menu;
+}
+.java-lang{
+	background: #b07219;
+}
+.kotlin-lang{
+	background: #F18E33;
+}
+.php-lang{
+	background: #4F5D95;
+}
+.js-lang{
+	background: #f1e05a;
 }
 .description-project{
 	position: relative;
@@ -269,7 +275,7 @@ h3{
 		max-width: 1700px;
 	}
 	.project{
-		width: 30%;
+		width: 31%;
 		height: 390px;	
 		padding: 20px 0px 10px 0px;
 		margin: 50px 1%;
