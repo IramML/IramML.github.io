@@ -1,155 +1,74 @@
+*{
+	font-family: 'Dosis', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+:root{
+	--blur_color: rgba(0,0,0,.2);
+    --source_link_bg_color: #1A5A6D;
+
+	--main_text_color: #fff;
+	--titles_color: #fff;
+	--projects_text_color: #000;
+    --languaje_text_color: #fff;
+    --source_link_text_color: #fff;
+
+	--border_project_color: #ccc;
+
+    --kotlin_bg_color: #F18E33;
+    --php_bg_color: #4F5D95;
+    --js_bg_color: #f1e05a;
+    --java_bg_color: #b07219;
+}
 body{
-    font-family: 'Roboto', sans-serif;
-    color: #000;
-	background: rgb(240, 240, 240);
+	 color: var(--main_text_color);
+	 background: rgb(240, 240, 240);
+ }
+#full-page{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -80px 50%;
 }
-header{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-    background: #fff;
-    padding-bottom: 20px;
-    animation: 1s fadeIn 1;
+.blur{
+	width: 100%;
+	height: 100%;
+	background: var(--blur_color);
 }
-#bar{
-    background: #0b1c21;
-    width: 100%;
-    height: 20vw;
-    margin-bottom: 25vw;
-    box-shadow: #000 0px 0px 5px;
-}
-#avatar{
-    position: absolute;
-    background-image: url('../img/avatar.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    border-radius: 50%;
-    border: 1px solid grey;
-    width: 30vw;
-    height: 30vw;
-    display: block;
-    margin: auto;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: #000 0px 0px 5px;
-}
-#name{
-    color: #33161F;
-    font-weight: bold;
-    font-size: 2em;
-}
-h2{
-    color: #33161F;
-}
-h3{
-    animation: 1s fadeIn 1;
-	text-align: center;
-	font-size: 1.8em;
-	margin: 50px 25px;
-	font-weight: 600;
-}
-.projects{
+#main-content{
 	width: 90%;
-	height: auto;
-	margin: 50px auto;
-	display: block;
-}
-.project{
-	position: relative;
-	display: block;
-	width: 90%;
-	height: auto;
-	margin: 20px auto;	
-	padding: 20px 0px 10px 0px;
-	background: #fff;
-    border-radius: 5%;
-    color: #000;
 	animation: 1s fadeIn 1;
 }
-.name-project{
-	font-size: 1.5em;
+h1.title{
+	font-size: 2em;
+	margin: 20px;
+	line-height: 1em;
+}
+h2.title{
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+.center-text{
 	text-align: center;
-	margin: 20px 25px;
-	font-weight: 600;
 }
-.language-used{
-	text-align: center;
-	width: 100%;
-	display: block;
-	margin: 25px 0px 10px 0px;
-}
-
-
-.language{
-	display: inline-block;
-	width: 20%;
-	border-radius: 14px;
-	margin: 0px 10px;
-	padding: 8px 4px;
-}
-.language-used span{
-	color: white;
-	cursor: context-menu;
-}
-.java-lang{
-	background: #b07219;
-}
-.kotlin-lang{
-	background: #F18E33;
-}
-.php-lang{
-	background: #4F5D95;
-}
-.js-lang{
-	background: #f1e05a;
-}
-.description-project{
-	position: relative;
-	margin: 40px 25px 80px 25px;
-	text-align: center;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.links-projects{
-	position: relative;
-	padding: 10px 0px 45px 0px;
-	width: 100%;
-}
-.project-link{
-	background: #1A5A6D;
-	border: solid #1A5A6D;
-	border-radius: 10px;
-	padding: 10px;
-	text-decoration: none;
-	color: #fff;
-}
-.link1, .link2{
-	width: 50%;
-	text-align: center;
-	float: left;
-}
-.project-link:hover{
-	transition: color 0.5s, background 0.5s;
-	background: #fff;
-	color: #1A5A6D;
+.center-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 #networks{
-	text-align: center;
-	margin: 80px auto 50px auto;
-	animation: 1s fadeIn 1;
+	margin: 20px auto;
+	width: 100%;
 }
 #networks img{
 	width: 35px;
 	height: 35px;
 	margin: 10px;
 }
-#networks img:nth-child(0):hover{
-	animation: 1s gum 1;
-}
-#networks img:nth-child(1):hover{
+#networks img:hover{
 	animation: 1s gum 1;
 }
 @keyframes fadeIn{
@@ -171,140 +90,137 @@ h3{
 		transform: scaleX(1.10) scaleY(0.85);
 	}
 }
+#scroll-projects{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	cursor: pointer;
+	background-image: url("../img/arrow.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: infinite scroll-button 1.5s linear;
+	transform: translateX(-50%);
+}
+@keyframes scroll-button{
+	0%{
+		opacity: 0.2;
+		transform-origin: 50% 50%;
+		transform: scale(1) translateX(-50%);
+
+	}
+	50%{
+		opacity: 1;
+		transform-origin: 50% 50%;
+		transform: scale(1.5) translateX(-33%);
+	}
+	100%{
+		opacity: 0.2;
+		transform-origin: 50% 50%;
+		transform: scale(1) translateX(-50%);
+	}
+}
+#projects-content{
+	color: var(--projects_text_color);
+}
+.project{
+	border-bottom: solid var(--border_project_color) 1px;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px 0;
+}
+.name-project{
+    display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.4em;
+	margin: 0 10px;
+}
+.language{
+    display: inline-block;
+    border-radius: 14px;
+    margin: 0 10px;
+    padding: 8px 10px;
+    color: var(--languaje_text_color);
+    min-width: 60px;
+}
+.java-lang{
+    background: var(--java_bg_color);
+}
+.kotlin-lang{
+    background: var(--kotlin_bg_color);
+}
+.php-lang{
+    background: var(--php_bg_color);
+}
+.js-lang{
+    background: var(--js_bg_color);
+}
+.description{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+.description p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 10px 20px;
+    display: block;
+}
+.project-link{
+    width: 60px;
+    background: var(--source_link_bg_color);
+    border: solid  var(--source_link_bg_color);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color:  var(--source_link_text_color);
+    margin: 10px 20px;
+    display: block;
+}
+.project-link:hover{
+    transition: color 0.5s, background 0.5s;
+    background: var(--source_link_text_color);
+    color: var(--source_link_bg_color);
+}
 @media screen and (min-width: 480px){
-    #bar{
-        height: 75px;
-        margin-bottom: 10vw;
+    h1.title{
+        font-size: 2.8em;
     }
-    #avatar{
-        position: absolute;
-        width: 18vw;
-        height: 18vw;
-        top: 25%;
+    h2.title{
+        font-size: 1.8em;
     }
-    #name{
-        font-size: 3em;
+    #networks img{
+        width: 35px;
+        height: 35px;
     }
-    h3{
-        font-size: 2em;
-    }
-    .projects{
-		max-width: 400px;	
-    }
-    .links-projects{
-		height: auto;
-	}
-	#networks img{
-		width: 35px;
-		height: 35px;
-		margin: 10px;
-	}
-	#networks{
-		margin: 0px auto 0px auto;
-	}
 }
 @media screen and (min-width: 767px){
-    #bar{
-        height: 75px;
-        margin-bottom: 8vw;
-    }
-    #avatar{
-        position: absolute;
-        width: 15vw;
-        height: 15vw;
-        top: 25%;
-    }
-    #name{
+    h1.title{
         font-size: 3em;
     }
-    h3{
+    h2.title{
         font-size: 2em;
     }
-	.projects{
-		max-width: none;	
-	}
-	.project{
-		display: inline-block;
-		width: 42%;
-		height: 360px;	
-		padding: 20px 0px 10px 0px;
-		margin: 50px 4%;
-		float: left;
-	}
-	.description-project{
-		margin: 40px;
+    #networks img{
+        width: 38px;
+        height: 38px;
     }
-    .language{
-		margin: 0px 20px;
-		width: 20%;
-		padding: 6px 0px;
-	}
-	.language-used{
-		height: 50px;
-    }
-
-    .links-projects{
-        position: absolute;
-        padding: 10px 0px 45px 0px;
-        width: 100%;
-        bottom: 0%;
-        float: top;
-    }
-    #networks{
-		clear: both;
-	}
 }
-@media screen and (min-width: 950px){ 
-    #bar{
-        height: 75px;
-        margin-bottom: 5vw;
-    }
-    #avatar{
-        position: absolute;
-        width: 8vw;
-        height: 8vw;
-        top: 25%;
-    }
-    #name{
+@media screen and (min-width: 950px){
+	#full-page{
+		background-position: 0 50%;
+	}
+    h1.title{
         font-size: 3em;
     }
-    h3{
+    h2.title{
         font-size: 2em;
     }
-	.projects{
-		max-width: 1700px;
-	}
-	.project{
-		width: 31%;
-		height: 390px;	
-		padding: 20px 0px 10px 0px;
-		margin: 50px 1%;
-		float: left;
-	}
-	.description-project{
-		margin: 40px;
+    #networks img{
+        width: 40px;
+        height: 40px;
     }
-    .language{
-		margin: 0px 20px;
-		width: 20%;
-		padding: 6px 0px;
-	}
-	.language-used{
-		height: 50px;
-    }
-
-    .links-projects{
-        position: absolute;
-        padding: 10px 0px 45px 0px;
-        width: 100%;
-        bottom: 0%;
-        float: top;
-    }
-    #networks{
-		margin: 100px auto 25px auto;
-	}
-	#networks img{
-		width: 45px;
-		height: 45px;
-	}
 }
