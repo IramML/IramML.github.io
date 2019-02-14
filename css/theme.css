@@ -20,6 +20,9 @@
     --js_bg_color: #f1e05a;
     --java_bg_color: #b07219;
 }
+html{
+	scroll-behavior: smooth;
+}
 body{
 	 color: var(--main_text_color);
 	 background: rgb(240, 240, 240);

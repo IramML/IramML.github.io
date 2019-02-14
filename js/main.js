@@ -1,9 +1,9 @@
 btnScroll=document.getElementById('scroll-projects');
 projects=document.getElementsByClassName('project');
 descriptions=document.getElementsByClassName('description');
-impleneOnClicks();
+implementOnClicks();
 
-function impleneOnClicks() {
+function implementOnClicks() {
     btnScroll.onclick = function () {
         document.getElementById('projects-content').scrollIntoView();
     };

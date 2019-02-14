@@ -22,10 +22,20 @@
 					<a target="_blank" href="https://twitter.com/IramML_"><img src="img/twitter_white.png" alt="Twitter" id="twitter-network"></a>
 				</div>
 			</div>
-			<div id="scroll-projects"></div>
+			<a href="#projects-content" id="scroll-projects"></a>
 		</div>
 	</div>
 	<div id="projects-content">
+		<div class="project">
+			<p class="name-project"><strong>UberClone</strong></p>
+            <div class="language java-lang center-text">
+                <span>Java</span>
+            </div>
+            <div class="description">
+                <p class="description-project">This repository is conformed with two applications, Driver and Rider App</p>
+                <a target="_blank" class="project-link center-text" href="https://github.com/IramML/UberClone">Source</a>
+            </div>
+		</div>
 		<div class="project">
 			<p class="name-project"><strong>CheckinsApp</strong></p>
             <div class="language kotlin-lang center-text">
@@ -68,5 +78,32 @@
 	</script>
 	<script src="js/main.js"></script>
 	<script src="js/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+	
+		  // Store hash
+		  var hash = this.hash;
+	
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script> 
 </body>
 </html>
