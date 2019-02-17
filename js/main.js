@@ -1,21 +1,19 @@
-btnScroll=document.getElementById('scroll-projects');
-projects=document.getElementsByClassName('project');
-descriptions=document.getElementsByClassName('description');
-implementOnClicks();
+const profesion = baffle(".profesion");
 
-function implementOnClicks() {
-    btnScroll.onclick = function () {
-        document.getElementById('projects-content').scrollIntoView();
-    };
-    for (var i = 0; i < projects.length; i++) {
-        showDescription(i);
+profesion.set({
+    characters: '█▓▓ ░░>██ ▓█▓>▓ ▓<█ ░<▒░▓ █░<█ █▒> ▓░▓< ▒▓░░',
+    speed: 90
+});
+
+profesion.start();
+
+profesion.reveal(3000);
+console.log("tagline");
+$('#tagline').t({
+    beep: false,
+    caret:'<span style="color:red;">|</span>',
+    typing:function(elm,chr){
+    if(chr.match(/\-trigger/))
+        $('#pow-txt').show().delay(100).fadeOut(0);
     }
-}
-function showDescription(index){
-    projects[index].onclick=function () {
-        if(descriptions[index].style.height!=="auto")
-            descriptions[index].style.height="auto";
-        else
-            descriptions[index].style.height="0";
-    };
-}
+});
