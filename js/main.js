@@ -17,3 +17,7 @@ $('#tagline').t({
         $('#pow-txt').show().delay(100).fadeOut(0);
     }
 });
+setTimeout(function(){
+    $('.loader').hide();
+
+}, 1800);
